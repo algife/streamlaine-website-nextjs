@@ -1,0 +1,105 @@
+{
+  "RootLayout": {
+    "home_link": "Home",
+    "about_link": "About",
+    "guestbook_link": "Guestbook",
+    "portfolio_link": "Portfolio",
+    "sign_in_link": "Sign in",
+    "sign_up_link": "Sign up"
+  },
+  "BaseTemplate": {
+    "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
+    "made_with": "Made with"
+  },
+  "Navbar": {
+    "submit_cta_text": ""
+  },
+  "Index": {
+    "meta_title": "Next.js Boilerplate Presentation",
+    "meta_description": "Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework.",
+    "hero__proof_statement__text": "Klarna adds $40 Million USD to its 2024's revenue thanks to its new AI Customer Support Agent.",
+    "hero__proof_statement__subtext": "In 1 month, the bot has done the work of 700 human agents, outperforming them in almost every aspect.",
+    "hero__proof_statement__date": "27 Feb. 2024",
+    "success-cases__klarna__role": "Published in Klarna.com on 27 Feb. 2024",
+    "success-cases__klarna__name": "name",
+    "success-cases__klarna__title": "Klarna boosts its revenue by $40 Million USD thanks to its new AI-powered Customer Support Agent.",
+    "success-cases__klarna__highlight_1": "It handles the job of 700 employees (2/3 of the customer support tickets)",
+    "success-cases__klarna__highlight_2": "It reduced the resolution times by 81.8%",
+    "success-cases__klarna__highlight_3": "Customer satisfaction was similar to its human colleagues",
+    "success-cases__klarna__highlight_4": "It was more precise and helpful in its responses leading to a 25% drop in repeat inquiries",
+    "success-cases__klarna__closure": "... IN JUST ONE MONTH!. These results are from integrating an AI Chatbot (with limited capabilities) in one single company. Imagine what can we do for you with even far more advanced solutions.",
+    "hero__overline": "Don't fall behind.",
+    "hero__heading": "Burst your quarterly KPIs",
+    "hero__subHeading_1": "with custom trained",
+    "hero__subHeading_2": "AI Agents",
+    "hero__subHeading_3": "to tackle",
+    "hero__subHeading_4": "your",
+    "hero__subHeading_5": "in a fraction of the time and cost."
+  },
+  "CallMeDialog": {
+    "triggerButtonText": "Show me a demo",
+    "title": "Call me for a demo (~7 mins)",
+    "description": "Our Customer Care Representative will reach you to have a quick chat, know more about the goals that you have and and show you a quick demo. You might get offered to schedule a discovery call with us for a further date.",
+    "submit_cta_text": "Call me!",
+    "phone_placeholder": "123-456-7890",
+    "notValidCallMeNowForm": "Please, make sure you've entered valid data in the form and checked-on the box about the Terms of Service and Privacy Policy."
+  },
+  "TermsAcceptance": {
+    "i_accept": "I've read and accept the",
+    "terms_of_service": "Terms Of Service",
+    "and_the": "and the",
+    "privacy_policy": "Privacy Policy, Cookies and how my personal data will be handled"
+  },
+  "Guestbook": {
+    "meta_title": "Guestbook",
+    "meta_description": "An example of CRUD operation",
+    "database_powered_by": "Database powered by",
+    "loading_guestbook": "Loading guestbook..."
+  },
+  "GuestbookForm": {
+    "username": "Username",
+    "body": "Body",
+    "save": "Save"
+  },
+  "About": {
+    "meta_title": "About",
+    "meta_description": "About page description",
+    "about_paragraph": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
+    "translation_powered_by": "Translation powered by"
+  },
+  "Portfolio": {
+    "meta_title": "Portfolio",
+    "meta_description": "Welcome to my portfolio page!",
+    "presentation": "Welcome to my portfolio page! Here you will find a carefully curated collection of my work and accomplishments. Through this portfolio, I'm to showcase my expertise, creativity, and the value I can bring to your projects.",
+    "portfolio_name": "Portfolio {name}",
+    "log_management_powered_by": "Log management powered by"
+  },
+  "PortfolioSlug": {
+    "meta_title": "Portfolio {slug}",
+    "meta_description": "Portfolio {slug} description",
+    "header": "Portfolio {slug}",
+    "content": "Created a set of promotional materials and branding elements for a corporate event. Crafted a visually unified theme, encompassing a logo, posters, banners, and digital assets. Integrated the client's brand identity while infusing it with a contemporary and innovative approach. Garnered favorable responses from event attendees, resulting in a successful event with heightened participant engagement and increased brand visibility.",
+    "error_reporting_powered_by": "Error reporting powered by",
+    "coverage_powered_by": "Code coverage powered by"
+  },
+  "SignIn": {
+    "meta_title": "Sign in",
+    "meta_description": "Seamlessly sign in to your account with our user-friendly login process."
+  },
+  "SignUp": {
+    "meta_title": "Sign up",
+    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
+  },
+  "Dashboard": {
+    "meta_title": "Dashboard",
+    "hello_message": "Hello {email}!"
+  },
+  "UserProfile": {
+    "meta_title": "User Profile"
+  },
+  "DashboardLayout": {
+    "dashboard_link": "Dashboard",
+    "user_profile_link": "Manage your account",
+    "sign_out": "Sign out"
+  }
+}

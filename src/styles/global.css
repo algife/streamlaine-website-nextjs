@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+.html,
+body,
+.body,
+* {
+  backgroundcolor: "#f1f5f9";
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+.box {
+  max-width: 48rem;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.25rem;
+  position: relative;
+  border-radius: 0.5rem;
+  margin-top: -80px;
+  -webkit-box-shadow: 11px 0 38px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 11px 0 38px 0 rgba(0, 0, 0, 0.1);
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-shape-divider-bottom-001 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-001 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 69px;
+}
+
+.styledInput,
+.PhoneInput,
+.PhoneInputInput,
+.PhoneInputCountrySelect,
+.PhoneInput,
+input {
+  background: #f1f5f9;
+  color: rgb(74 85 104 / var(--tw-text-opacity));
+}
+.PhoneInput {
+  border-bottom: 1px solid gray;
+}
