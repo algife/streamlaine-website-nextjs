@@ -39,7 +39,7 @@
   "CallMeDialog": {
     "triggerButtonText": "Show me a demo",
     "title": "Call me for a demo (~7 mins)",
-    "description": "Our Customer Care Representative will reach you to have a quick chat, know more about the goals that you have and and show you a quick demo. You might get offered to schedule a discovery call with us for a further date.",
+    "description": "Our Customer Care Representative will call you today to showcase a quick demo and let you know some potential areas where AI Agents can boost your business results by saving time and money or generating more revenue opportunities.",
     "submit_cta_text": "Call me!",
     "phone_placeholder": "123-456-7890",
     "notValidCallMeNowForm": "Please, make sure you've entered valid data in the form and checked-on the box about the Terms of Service and Privacy Policy."

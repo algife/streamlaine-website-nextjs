@@ -70,7 +70,9 @@ export default function DialogForm({
                   {dialogTitle}
                 </Hui.Dialog.Title>
 
-                <p className="mb-5 mt-2 text-sm text-gray-500">{description}</p>
+                <p className="mb-5 mt-2 text-sm text-gray-700 opacity-90">
+                  {description}
+                </p>
 
                 <div className="button-group flex flex-row">{form}</div>
               </div>
