@@ -9,9 +9,9 @@ export default function useTypeWriter(
 
   const startTyping = useCallback(() => {
     let currentSentenceIndex = 0;
-    let currentCharacterIndex = 0;
+    let currentCharacterIndex = sentences.length - 1;
     let isDeleting = false;
-    const typingSpeed = 100; // Adjust typing speed as needed
+    const typingSpeed = 75; // Adjust typing speed as needed
 
     const typingInterval = setInterval(() => {
       const currentSentence = sentences[currentSentenceIndex];
@@ -44,7 +44,9 @@ export default function useTypeWriter(
 
     const typingTimeout = setTimeout(startTyping, startDelay);
 
-    return () => clearTimeout(typingTimeout);
+    return () => {
+      clearTimeout(typingTimeout);
+    };
   }, [startDelay, startTyping, sentences]);
 
   return textContent;
