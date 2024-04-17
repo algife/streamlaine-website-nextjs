@@ -27,7 +27,7 @@ export const TypewriterEffectCarrousel = ({
   typewritenSentences: string[];
   className: string;
 }) => {
-  const textContent = useTypewriter(1500, 1000, typewritenSentences);
+  const textContent = useTypewriter(1850, 1000, typewritenSentences);
 
   return (
     <div className="flex flex-row">
