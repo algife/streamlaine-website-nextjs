@@ -15,8 +15,8 @@
     "submit_cta_text": ""
   },
   "Index": {
-    "meta_title": "Next.js Boilerplate Presentation",
-    "meta_description": "Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework.",
+    "meta_title": "Streamlaine | AI & Automation Solution to streamline your operations.",
+    "meta_description": "AI Agents to save you time and money, close deals on autopilot and achieve greater results in a fraction of the time an costs.",
     "hero__proof_statement__text": "Klarna adds $40 Million USD to its 2024's revenue thanks to its new AI Customer Support Agent.",
     "hero__proof_statement__subtext": "In 1 month, the bot has done the work of 700 human agents, outperforming them in almost every aspect.",
     "hero__proof_statement__date": "27 Feb. 2024",
@@ -36,12 +36,12 @@
     "hero__subHeading_4": "your",
     "hero__subHeading_5": "in a fraction of the time and cost."
   },
+  "FormFields": { "phone_placeholder": "123-456-7890" },
   "CallMeDialog": {
     "triggerButtonText": "Show me a demo",
-    "title": "Call me for a demo (~7 mins)",
-    "description": "Our Customer Care Representative will call you today to showcase a quick demo and let you know some potential areas where AI Agents can boost your business results by saving time and money or generating more revenue opportunities.",
+    "title": "Call me for a demo",
+    "description": "Experience yourself a demo. Discover what AI Agents can do for your business in a quick discovery call. Save time. Generate more revenue, get clients on autopilot, etc...",
     "submit_cta_text": "Call me!",
-    "phone_placeholder": "123-456-7890",
     "notValidCallMeNowForm": "Please, make sure you've entered valid data in the form and checked-on the box about the Terms of Service and Privacy Policy."
   },
   "TermsAcceptance": {
