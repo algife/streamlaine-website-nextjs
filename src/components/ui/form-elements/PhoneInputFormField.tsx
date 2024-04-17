@@ -1,22 +1,11 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import 'react-phone-number-input/style.css';
 
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useFormContext } from 'react-hook-form';
 import PhoneInput from 'react-phone-number-input';
 
 import cn from '@/utils/cn';
-
-function OnlyUSNumbersNote() {
-  return (
-    <div className="only-us-numbers-note">
-      <p>Only US numbers are allowed for now, but you can reach us in</p>
-      &nbsp;
-      <Link href="https://instagram.com/@streamlaine">our Instagram</Link>
-    </div>
-  );
-}
 
 export default function PhoneInputFormField({
   className,
@@ -75,7 +64,6 @@ export default function PhoneInputFormField({
           'text-gray-900 placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-0',
         )}
       />
-      <OnlyUSNumbersNote />
     </div>
   );
 }

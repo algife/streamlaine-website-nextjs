@@ -1,23 +1,62 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import {
+  type FieldErrors,
   type FieldValues,
   FormProvider,
   type SubmitHandler,
   useForm,
 } from 'react-hook-form';
 
-import { useInterval } from '@/hooks/useInterval';
+import { AppConfig } from '@/utils/AppConfig';
+import cn from '@/utils/cn';
 
 import StyledButton from '../ui/buttons/StyledButton';
 import DialogForm from '../ui/DialogForm';
 import AcceptTermsFormField from '../ui/form-elements/AcceptTermsFormField';
 import PhoneInputFormField from '../ui/form-elements/PhoneInputFormField';
 
+const { linksClassName } = AppConfig;
+
+function OnlyUSNumbersNoteRow() {
+  return (
+    <div className="only-us-numbers-note inline-block pb-1 pt-2 italic text-gray-700 opacity-90">
+      <p className="inline  text-sm">
+        Only US numbers are allowed for now. You can also reach out to us at
+      </p>
+      &nbsp;
+      <Link
+        href="https://instagram.com/@streamlaine"
+        className={cn('inline text-sm', linksClassName)}
+        target="_blank"
+      >
+        our Instagram
+      </Link>
+      .
+    </div>
+  );
+}
+
+function DisplayErrorsRow({ errors }: { errors: FieldErrors<FieldValues> }) {
+  return (
+    <div className="flex flex-row">
+      {Object.keys(errors).length > 0 && (
+        <div className="flex flex-row font-medium text-red-500">
+          {Object.keys(errors)
+            .map((k) => errors[k]?.message?.toString() ?? '')
+            .join('<br/>')}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function CallMeNowDialog() {
   const t = useTranslations('CallMeDialog');
+
   const [isOpen, setIsOpen] = useState(false);
 
   const methods = useForm<FieldValues>({
@@ -31,24 +70,25 @@ export default function CallMeNowDialog() {
     formState: { errors },
   } = methods;
 
-  useInterval(3000, () => console.log(errors), []);
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+    console.log('Form submitted', data);
 
-  const handleCtaClick = () => {
     // Check if the form is valid.
     const { isValid } = methods.formState;
     if (!isValid) {
       alert(t('notValidCallMeNowForm'));
+      console.log(methods.formState);
+      return;
     }
-    if (isValid) {
-      // TODO: Make something with this.
 
-      // After that logic, close the modal.
-      setIsOpen(false);
-    }
-  };
+    // Send Form Data to API
+    fetch(AppConfig.apiEndpoints.callMeNow, {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
 
-  const onSubmit: SubmitHandler<FieldValues> = (data) => {
-    console.log('Form submitted', data);
+    // After that logic, close the modal.
+    setIsOpen(false);
     methods.reset();
   };
 
@@ -72,21 +112,15 @@ export default function CallMeNowDialog() {
                 <StyledButton
                   variant="filled"
                   color="accent"
-                  onClick={handleCtaClick}
                   className="relative rounded-l-none rounded-r-xl border-0"
                   text={t('submit_cta_text')}
                   type="submit"
                 />
               </div>
+              <DisplayErrorsRow errors={errors} />
+              <OnlyUSNumbersNoteRow />
               <div className="flex flex-row">
                 <AcceptTermsFormField />
-              </div>
-              <div className="flex flex-row">
-                {/* {Object.keys(errors).length > 0 && (
-                  <div className="flex flex-row font-medium text-red-500">
-                    {(errors as any).phone?.message?.toString()}
-                  </div>
-                )} */}
               </div>
             </div>
 
