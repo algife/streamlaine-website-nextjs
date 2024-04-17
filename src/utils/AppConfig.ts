@@ -8,6 +8,7 @@ export const AppConfig = {
   locales: ['en'],
   defaultLocale: 'en',
   localePrefix,
+  linksClassName: 'text-sky-500 hover:underline',
   apiEndpoints: {
     callMeNow: `${process.env.NEXT_PUBLIC_API_URL}/37a7208b-f334-4838-b43e-6ca977eae3c8`,
   },
