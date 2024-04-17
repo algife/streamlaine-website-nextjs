@@ -36,14 +36,16 @@ export default function useTypeWriter(
       currentCharacterIndex += isDeleting ? -1 : 1;
     }, typingSpeed);
 
-    return () => clearInterval(typingInterval);
+    return () => {
+      clearInterval(typingInterval);
+    };
   }, [coolOffBtwSentences, sentences]);
 
   useEffect(() => {
     if (sentences.length === 0) return;
-
     const typingTimeout = setTimeout(startTyping, startDelay);
 
+    // eslint-disable-next-line consistent-return
     return () => {
       clearTimeout(typingTimeout);
     };
